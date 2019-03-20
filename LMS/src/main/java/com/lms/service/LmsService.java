@@ -2,8 +2,6 @@ package com.lms.service;
 
 import java.util.List;
 
-import org.apache.camel.CamelContext;
-
 import com.lms.model.Book;
 
 public interface LmsService {
