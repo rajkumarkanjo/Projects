@@ -1,0 +1,32 @@
+{
+  "id": "H0097",
+  "buildingType": null,
+  "occupiedStatus": "Unknown",
+  "residentList": [],
+  "activeState": "true",
+  "address": {
+    "unitNo": "Raj ",
+    "block": "SaiTempleA",
+    "street": "umastreet",
+    "city": "bangalore",
+    "country": "india",
+    "postalCode": "5214578"
+  },
+  "objectList": null,
+  "alertRuleList": null,
+  "alertrule": null,
+  "alertEnableStatus": "true",
+  "remarks": "Update for Uat without having resident 1234",
+  "caregivers": [
+    {
+      "id": "U0001",
+      "name": "Lay Lay"
+    }
+  ],
+  "activityLastSeen": null,
+  "createdBy": "U0001",
+  "createdOn": "09-12-2018 07:03:32",
+  "updatedBy": "U0001",
+  "updatedOn": "10-12-2018 10:39:06",
+  "homeMappingId": null
+}

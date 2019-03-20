@@ -1,0 +1,12 @@
+{  
+   "alertRuleIds":[  
+      "L001",
+      "L002"
+   ],
+   "homeIds":[  
+      "H001",
+      "H002",
+      "H003"
+   ],
+   "addToHomes":"true"
+}

@@ -1,0 +1,41 @@
+{
+    "alertRuleName" : "Inactivity1",
+    "parameters" : [ 
+        {
+            "currentDay" : "Saturday",
+            "beginHours" : "08:00",
+            "endHours" : "22:00",
+            "interval" : "6"
+        }, 
+        {
+            "currentDay" : "Sunday",
+            "beginHours" : "09:00",
+            "endHours" : "23:00",
+            "interval" : "9"
+        }
+    ],
+	   "alertRuleEscalation": {
+	    "escalationTimeInterval" : 10,
+	    "alertStatus" : "Accepted",
+	    "escalationUserList" : [ 
+	        {
+	            "userId" : "U001",
+	            "username" : "Anna",
+	            "contactNumber" : "1234567890"
+	        }, 
+	        {
+	            "userId" : "G001",
+	            "username" : "All Staff"
+	        }
+	    ],
+	    "activeState" : "false"
+	},
+    "priority" : 4,
+    "templateSource" : 1,
+    "activeState" : "true",
+    "enableStatus" : "true",
+    "createdBy" : "U001",
+    "createdOn" : "24-11-2016 15:03:47",
+    "updatedBy" : "U010",
+    "updatedOn" : "24-11-2016 15:05:16"
+}

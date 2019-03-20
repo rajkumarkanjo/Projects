@@ -1,0 +1,25 @@
+{
+  "alertRuleId": "L0001",
+  "alertRuleName": "Manoj",
+  "priority": "1",
+  "templateSource": "2",
+  "activeState": "true",
+  "enableStatus": "true",
+  "alertRuleEscalation": [],
+  "home": null,
+  "createdBy": "U0001",
+  "createdOn": "05-09-2018 15:37:42",
+  "updatedBy": "U001",
+  "updatedOn": "05-09-2018 16:02:11",
+  "parameters": [
+    {
+      "currentDay": "Friday",
+      "beginHours": "00:00",
+      "endHours": "23:00",
+      "interval": "120000"
+    }
+  ],
+  "residents": null,
+  "homes": [
+  ]
+}

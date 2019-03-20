@@ -1,0 +1,39 @@
+{
+  "userDetails": {
+    "dob": "31/10/1900",
+    "gender": "male",
+    "address": {
+      "unitNo": "1",
+      "block": "1",
+      "street": "1",
+      "postalCode": "111111",
+      "country": "11",
+      "city": "11"
+    },
+    "email": "manoj@tcs.com",
+    "contactNo": "12434566"
+  },
+  "name": {
+    "firstName": "Manoj",
+    "middleName": "D",
+    "lastName": "Kumar"
+  },
+  "homeId": [
+    "H0001"
+  ],
+  "id": [
+    "G0003"
+  ],
+  "autoLogoffTime": 120,
+  "createdBy": "U0001",
+  "buildings": [
+    {
+      "homeId": "H0001"
+    }
+  ],
+  "communitys": [
+    {
+      "id": "G0003"
+    }
+  ]
+}

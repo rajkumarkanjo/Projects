@@ -1,0 +1,31 @@
+{ 
+  "version": "1.0.1", 
+  "sensors": [ 
+    { 
+      "sensor": "Door_Contact_23", 
+      "feature": "Rid_1", 
+      "output": [ 
+        { 
+          "name": "domain", 
+          "type": "text" 
+        }, 
+        { 
+          "name": "activityStatus", 
+          "type": "text" 
+        }, 
+        { 
+          "name": "activityId", 
+          "type": "Integer" 
+        }, 
+        { 
+          "name": "batteryStatus", 
+          "type": "Integer" 
+        }, 
+        { 
+          "name": "sensorStatus", 
+          "type": "text" 
+        } 
+      ] 
+    } 
+  ] 
+}

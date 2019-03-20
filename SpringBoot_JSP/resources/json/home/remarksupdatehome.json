@@ -1,0 +1,65 @@
+{
+  "id": "H004",
+  "buildingType": "HOUSE",
+  "occupiedStatus": "occupied",
+  "residentList": [
+    {
+      "residentId": "R002",
+      "residentName": "Rebecca2Lim",
+      "residentContactNumber": null
+    }
+  ],
+  "activeState": "true",
+  "address": {
+    "unitNo": "#07-24",
+    "block": "Block 15",
+    "street": "MG Nagar",
+    "city": "Bengaluru",
+    "country": "Bengaluru",
+    "postalCode": ""
+  },
+  "objectList": [
+    {
+      "objectId": "S008",
+      "name": "H002_Bathroom_2"
+    },
+    {
+      "objectId": "S009",
+      "name": "H002_Bed_Area_2"
+    },
+    {
+      "objectId": "S010",
+      "name": "H002_Door_Contact_2"
+    },
+    {
+      "objectId": "S011",
+      "name": "H002_Kitchen_2"
+    },
+    {
+      "objectId": "S001",
+      "name": "H002_Living_Room_2"
+    }
+  ],
+  "alertRuleList": [
+    {
+      "alertRuleId": "L001"
+    }
+  ],
+  "alertEnableStatus": "true",
+  "remarks": "Chechi for testing",
+  "caregivers": [
+    {
+      "id": "U004",
+      "name": "Raj"
+    },
+    {
+      "id": "U004",
+      "name": "Raj"
+    }
+  ],
+  "activityLastSeen": "26-12-2016 07:38:53",
+  "createdBy": "U001",
+  "createdOn": "01/07/2016 10:05:43",
+  "updatedBy": "U001",
+  "updatedOn": "29-12-2016 05:00:28"
+}

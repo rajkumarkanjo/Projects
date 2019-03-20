@@ -1,0 +1,36 @@
+{
+  "version": "1.0.1",
+  "observations": [
+    {
+      "sensor": "toilet_bathroom_MP0004",
+      "feature": "Rid_MP0004",
+      "record": [
+        {
+          "starttime": "14-Nov-2017 15:38:49 UTC",
+          "output": [
+            {
+              "name": "sensorStatus",
+              "value": "NA"
+            },
+            {
+              "name": "batteryStatus",
+              "value": "NA"
+            },
+            {
+              "name": "activityStatus",
+              "value": "Motion detected"
+            },
+            {
+              "name": "nodeName",
+              "value": "d-01"
+            },
+            {
+              "name": "sensorType",
+              "value": "SMUSensor"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

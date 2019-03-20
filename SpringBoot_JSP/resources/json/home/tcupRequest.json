@@ -1,0 +1,60 @@
+{
+  "version": "1.0.1",
+  "observations": [
+    {
+      "sensor": "Living_Room_40CGFHFQ-NIEO9XWD-KAZKLHHN",
+      "feature": "Rid_40CGFHFQ-NIEO9XWD-KAZKLHHN",
+      "record": [
+        {
+          "starttime": "16-Feb-2017 04:17:07 UTC",
+          "output": [
+            {
+              "name": "sensorStatus",
+              "value": "NA"
+            },
+            {
+              "name": "batteryStatus",
+              "value": "100"
+            },
+            {
+              "name": "activityStatus",
+              "value": "WINDOW/DOOR IS CLOSED"
+            },
+            {
+              "name": "activityId",
+              "value": "57d69912a78db9f3006e0656"
+            },
+            {
+              "name": "domain",
+              "value": "GOODLIFE"
+            },
+            {
+              "name": "eventTypeId",
+              "value": "20021"
+            },
+            {
+              "name": "zoneCode",
+              "value": "LR"
+            },
+            {
+              "name": "nodeName",
+              "value": "d-01"
+            },
+            {
+              "name": "extraData",
+              "value": "100%"
+            },
+            {
+              "name": "nodeId",
+              "value": "9"
+            },
+            {
+              "name": "sensorType",
+              "value": "Astralink"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

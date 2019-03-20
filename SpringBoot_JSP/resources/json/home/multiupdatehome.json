@@ -1,0 +1,23 @@
+{  
+   "buildingIds":[  
+      "H001",
+      "H002"
+   ],
+   "residentIds":[  
+      "R001",
+      "R002"
+   ],
+   "caregiverIds":[  
+      "U001",
+      "U002"
+   ],
+   "alertRuleIds":[  
+      "AR001",
+      "AR002"
+   ],
+   "disableAlerts":"false",
+   "enableAlerts":null,
+   "clearAllResidents":null,
+   "clearAllCaregivers":null,
+   "clearAllAlertRules":null
+}

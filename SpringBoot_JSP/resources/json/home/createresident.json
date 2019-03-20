@@ -1,0 +1,19 @@
+{
+   "residentName" : {
+        "firstName" : "Peter",
+        "middleName" : "",
+        "lastName" : "Sam"
+    },   
+    "activeState" : "true",   
+    "gender" : "Male",
+    "dob" : "20-sep-1980",    
+    "contactNo" : ["12345","1231231234"],
+    "email" : "petersam@gmail.com",   
+    "emergencyContactPersonId" : "U001",   
+    "photo" : "",
+    "remarks" : "Test Remarks",
+    "createdBy" : "U001",
+    "createdOn" : "12-12-2012",
+    "updatedBy" : "U001",
+    "updatedOn" : "13-12-2012"
+}
