@@ -10,7 +10,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="userjsp")
+//@Table(name="userjsp") //as i am using H2 database
 public class User implements Serializable {
 
 	private static final long serialVersionUID = 1L;
