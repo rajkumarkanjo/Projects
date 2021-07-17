@@ -1,0 +1,181 @@
+__________________________
+main class :
+
+public class Main {
+
+    public static void main(String[] args) {
+
+       Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter the Number of Applicant");
+        int n = sc.nextInt();
+        System.out.println("Enter the Applicants Details");
+
+        int arrSize = n ;
+        String[] inputArray = new String[arrSize];
+
+            for (int i = 0 ; i < inputArray.length ;i++) {
+                String str = sc.nextLine();
+                inputArray[i] = str;
+            }
+        ApplicantUtility applicantUtility = new ApplicantUtility();
+        applicantUtility.addValidApplicant(inputArray);
+        String[] loanAmount = applicantUtility.findLoanAmount();
+        for (String s : loanAmount) {
+            System.out.println(s);
+        }
+    }
+}
+_______________________
+Businees Class :
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class ApplicantUtility {
+
+    private Applicant[] applicantArray;
+
+    public Applicant[] getApplicantArray() {
+        return applicantArray;
+    }
+
+    public void setApplicantArray(Applicant[] applicantArray) {
+        this.applicantArray = applicantArray;
+    }
+
+    public String[] findLoanAmount(){
+
+        Applicant applicant;
+        Applicant[] applicantsInputValidArray = getApplicantArray();
+        String[]  finalBillAmount = new String[applicantsInputValidArray.length];
+
+        for (int i = 0 ; i < applicantsInputValidArray.length ; i++ ){
+
+            applicant = applicantsInputValidArray[i];
+
+            double loanAmount=0.0;
+
+            String panNumber = applicant.getPanNumber();
+            String applicantName = applicant.getApplicantName();
+            String companyBranch = applicant.getCompanyBranch();
+            int yearsOfExperience = applicant.getYearsOfExperience();
+            String applicantDesignation = applicant.getApplicantDesignation();
+
+            if (applicantDesignation.equalsIgnoreCase("Manager") && yearsOfExperience >= 5){
+                loanAmount = 400000;
+            }else if (applicantDesignation.equalsIgnoreCase("Manager") && yearsOfExperience < 5){
+                loanAmount = 200000;
+            }else if (applicantDesignation.equalsIgnoreCase("ExecutiveOfficer") && yearsOfExperience >= 5){
+                loanAmount = 200000;
+            }else if (applicantDesignation.equalsIgnoreCase("ExecutiveOfficer") && yearsOfExperience < 5){
+                loanAmount = 100000;
+            }else if (applicantDesignation.equalsIgnoreCase("Associate") && yearsOfExperience >= 5){
+                loanAmount = 400000;
+            }else {
+                loanAmount = 0.0;
+            }
+            String loan =  panNumber+":"+applicantName+":"+companyBranch+":"+yearsOfExperience+":"+applicantDesignation+":"+loanAmount;
+            finalBillAmount[i] = loan;
+        }
+        return finalBillAmount;
+    }
+    public void addValidApplicant(String[] records){
+
+        int arrSize = records.length;
+        Applicant[] applicants = new Applicant[arrSize];
+
+        for (int i = 0 ; i< records.length; i ++){
+
+            String inputData = records[i];
+
+            String [] splitData = inputData.split(":");
+            String panNumber = splitData[0];
+            String applicantName = splitData[1];
+            String companyBranch = splitData[2];
+            String yearsOfExperience = splitData[3];
+            String applicantDesignation = splitData[4];
+
+            if (ApplicantUtility.isValidPanCard(panNumber) == true){
+
+                Applicant applicant = new Applicant(panNumber ,applicantName ,companyBranch,Integer.parseInt(yearsOfExperience),applicantDesignation );
+                applicants[i] = applicant;
+            }else{
+                System.out.println("No Valid Applicant Found");
+            }
+        }
+        setApplicantArray(applicants);
+    }
+    public static boolean isValidPanCard(String panNumber)
+    {
+        String regex = "^[A-Z]{5}(\\d){4}[A-Z]$";
+
+        Pattern p = Pattern.compile(regex);
+
+        if (panNumber == null) {
+            return false;
+        }
+        Matcher m = p.matcher(panNumber);
+        return m.matches();
+    }
+}
+
+_______________________________
+Model Class :
+
+public class Applicant {
+
+    private String panNumber;
+    private String applicantName;
+    private String companyBranch;
+    private int  yearsOfExperience;
+    private String applicantDesignation;
+    
+    public Applicant(String panNumber, String applicantName, String companyBranch, int yearsOfExperience, String applicantDesignation) {
+        this.panNumber = panNumber;
+        this.applicantName = applicantName;
+        this.companyBranch = companyBranch;
+        this.yearsOfExperience = yearsOfExperience;
+        this.applicantDesignation = applicantDesignation;
+    }
+
+    public String getPanNumber() {
+        return panNumber;
+    }
+
+    public void setPanNumber(String panNumber) {
+        this.panNumber = panNumber;
+    }
+
+    public String getApplicantName() {
+        return applicantName;
+    }
+
+    public void setApplicantName(String applicantName) {
+        this.applicantName = applicantName;
+    }
+
+    public String getCompanyBranch() {
+        return companyBranch;
+    }
+
+    public void setCompanyBranch(String companyBranch) {
+        this.companyBranch = companyBranch;
+    }
+
+    public int getYearsOfExperience() {
+        return yearsOfExperience;
+    }
+
+    public void setYearsOfExperience(int yearsOfExperience) {
+        this.yearsOfExperience = yearsOfExperience;
+    }
+
+    public String getApplicantDesignation() {
+        return applicantDesignation;
+    }
+
+    public void setApplicantDesignation(String applicantDesignation) {
+        this.applicantDesignation = applicantDesignation;
+    }
+}
